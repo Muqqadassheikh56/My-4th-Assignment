@@ -1,0 +1,63 @@
+ .font{
+    font-family: 'Josefin Slab';
+ }  
+ .font1{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 20px;
+ }
+ .header1{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/burger.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+}
+.header-section1{
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    position: relative;
+    color: whitesmoke;
+
+}
+.header1 h1{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.center-div1{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%) ;
+    font-style: italic;
+    font-size: 18px;
+}
+.heading > h2{
+       text-shadow: 2px 2px 5px orangered;
+       font-size: 40px ;
+
+   }
+@media only screen and (max-width: 760px) {
+    .foot{
+        text-align: center;
+    }
+  }
